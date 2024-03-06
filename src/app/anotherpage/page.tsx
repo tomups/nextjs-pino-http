@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -20,11 +20,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.center}>
-        <button className={styles.button} onClick={() => updateTime()}>
-          What time is it on the server?
-        </button>
-        <h1>{time}</h1>
-        <Link href="/anotherpage">Check another page</Link>
+        <h1>This is another page</h1>
+        <Link href="/">Go back</Link>
       </div>
     </main>
   );
